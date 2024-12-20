@@ -51,35 +51,35 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>-->
   </head>
-  <body>
+  <body class="bg-very-dark-blue h-screen">
     <!-- Content container -->
     <div
-      class="bg-very-dark-blue h-screen flex justify-center items-center m-auto"
+      class="flex justify-center md:h-screen m-auto items-center overflow-scroll text-prose"
     >
       <!-- Grid styling -->
-      <div class="grid grid-col md:grid-col-3 gap-6">
+      <div class="grid md:grid-cols-4 min-w-fit gap-6 m-10" id="category-card">
         <!-- Profile Section -->
-        <div id="profile-section" class="bg-dark-blue w-max rounded-xl">
+        <div id="profile-section" class="bg-dark-blue flex flex-col rounded-xl row-span-2">
 
           <!-- Particulars -->
-          <div class="bg-blue p-10 rounded-xl z-10 flex gap-4">
-            <div class="md:shrink">
+          <div class="bg-blue rounded-xl z-10 flex md:flex-col gap-4 basis-3/4 mx-auto p-8">
+            <div class="md:shrink sd:m-auto">
               <img
                 src="images/image-jeremy.png"
-                class="h-16 rounded-full bg-white border-solid border-2 inline"
+                class="max-h-14 max-w-14 rounded-full bg-white border-solid border-2"
                 alt="jeremy-profile-pic"
               />
             </div>
             <div class="m-auto text-white">
               <p class="text-base">Report for</p>
-              <h1 class="text-xl">Jeremy Robson</h1>
+              <h1 class="text-xl md:text-3xl md:size-9/12">Jeremy Robson</h1>
             </div>
           </div>
           <!-- End particulars -->
 
           <!-- Navigation -->
-          <div id="tab" class="px-10 py-5 text-desaturated-blue">
-            <ul class="flex justify-between w-full">
+          <div id="tab" class="text-desaturated-blue px-8 py-2 my-auto">
+            <ul class="flex md:flex-col md:gap-4 justify-between m-auto py-4">
             <li><a id="daily-tab" class="cursor-pointer" href="#">Daily</a></li>
             <li><a id="weekly-tab" class="cursor-pointer" href="#">Weekly</a></li>
             <li><a id="monthly-tab" class="cursor-pointer" href="#">Monthly</a></li>
@@ -90,104 +90,29 @@
         <!-- End profile section -->
 
         <!-- Work section -->
-         <div class="bg-light-red-work h-40 relative rounded-xl">
+         <!--<div class="bg-light-red-work h-40 relative rounded-xl">
 
-          <!-- Icon section -->
-          <img src="images/icon-work.svg" class="float-right" alt="work-icon">
-         <div class="bg-dark-blue flex flex-row justify-between px-10 py-8 w-full rounded-xl absolute bottom-0">
+          <!- Icon section -->
+          <!--<img src="images/icon-work.svg" class="float-right" alt="work-icon">
+         <div class="bg-dark-blue flex flex-row justify-between px-6 py-8 w-full rounded-xl absolute bottom-0">
           <div class="text-white">
-            <p>Work</p>
-            <h1 id="work-data" class="text-xl">XXhrs</h1>
+            <p class="text-base">Real Work</p>
+            <h1 class="text-2xl"><span id="work-data">00</span>hrs</h1>
           </div>
-          <div class="my-auto text-pale-blue space-y-6">
-            <img src="images/icon-ellipsis.svg" class="float-right" alt="dots">
-            <p>Last week - <span id="last-week">36 hrs</span></p>
+          <div class="my-auto text-pale-blue space-y-7">
+            <a href="#" class="cursor-pointer"><img src="images/icon-ellipsis.svg" class="float-right" alt="dots"></a>
+            <p class="text-sm">Last week - <span id="last-week">36 hrs</span></p>
           </div>
          </div>
-         </div>
+         </div>-->
          <!-- end of work section -->
+
       </div>
       <!-- End of grid styling -->
     </div>
     <!-- End of content container-->
 
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
+    
 
     <div class="attribution">
       Challenge by
