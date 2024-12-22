@@ -57,12 +57,16 @@
       class="flex justify-center md:h-screen m-auto items-center overflow-scroll text-prose"
     >
       <!-- Grid styling -->
-      <div class="grid md:grid-cols-4 min-w-fit gap-6 m-10" id="category-card">
+      <div class="grid md:grid-cols-4 min-w-fit gap-6 m-10" id="grid-div">
         <!-- Profile Section -->
-        <div id="profile-section" class="bg-dark-blue flex flex-col rounded-xl row-span-2">
-
+        <div
+          id="profile-section"
+          class="bg-dark-blue flex flex-col rounded-xl row-span-2"
+        >
           <!-- Particulars -->
-          <div class="bg-blue rounded-xl z-10 flex md:flex-col gap-4 basis-3/4 mx-auto p-8">
+          <div
+            class="bg-blue rounded-xl z-10 flex md:flex-col gap-4 basis-3/4 mx-auto p-8"
+          >
             <div class="md:shrink sd:m-auto">
               <img
                 src="images/image-jeremy.png"
@@ -78,48 +82,44 @@
           <!-- End particulars -->
 
           <!-- Navigation -->
-          <div id="tab" class="text-desaturated-blue px-8 py-2 my-auto">
-            <ul class="flex md:flex-col md:gap-4 justify-between m-auto py-4">
-            <li><a id="daily-tab" class="cursor-pointer" href="#">Daily</a></li>
-            <li><a id="weekly-tab" class="cursor-pointer" href="#">Weekly</a></li>
-            <li><a id="monthly-tab" class="cursor-pointer" href="#">Monthly</a></li>
-            </ul>
+          <div
+            class="text-desaturated-blue px-8 py-2 my-auto flex md:flex-col md:gap-4 justify-between m-auto w-full"
+          >
+            <button
+              class="cursor-pointer btn hover:text-white"
+              href="#"
+              value="daily"
+            >
+              Daily
+            </button>
+
+            <button class="cursor-pointer btn hover:text-white" href="#">
+              Weekly
+            </button>
+
+            <button class="cursor-pointer btn hover:text-white" href="#">
+              Monthly
+            </button>
           </div>
           <!-- End nav -->
         </div>
         <!-- End profile section -->
-
-        <!-- Work section -->
-         <!--<div class="bg-light-red-work h-40 relative rounded-xl">
-
-          <!- Icon section -->
-          <!--<img src="images/icon-work.svg" class="float-right" alt="work-icon">
-         <div class="bg-dark-blue flex flex-row justify-between px-6 py-8 w-full rounded-xl absolute bottom-0">
-          <div class="text-white">
-            <p class="text-base">Real Work</p>
-            <h1 class="text-2xl"><span id="work-data">00</span>hrs</h1>
-          </div>
-          <div class="my-auto text-pale-blue space-y-7">
-            <a href="#" class="cursor-pointer"><img src="images/icon-ellipsis.svg" class="float-right" alt="dots"></a>
-            <p class="text-sm">Last week - <span id="last-week">36 hrs</span></p>
-          </div>
-         </div>
-         </div>-->
-         <!-- end of work section -->
-
       </div>
       <!-- End of grid styling -->
     </div>
     <!-- End of content container-->
 
-    
-
-    <div class="attribution">
+    <!-- Footer -->
+    <div class="text-base text-center m-auto">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/iyraa">Iyra</a>.
     </div>
+    <!-- End footer -->
 
     <script src="script.js"></script>
   </body>
