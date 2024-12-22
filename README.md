@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/iyraa/time-tracking-dashboard)
-- Live Site URL: [](https://iyraa.github.io/time-tracking-dashboard)
+- Solution URL: [Solution](https://github.com/iyraa/time-tracking-dashboard)
+- Live Site URL: [Live Site](https://iyraa.github.io/time-tracking-dashboard)
 
 ## My process
 
