@@ -44,10 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
           card.classList.add(
             "card",
             `bg-${color}`,
-            "h-40",
+            "h-36",
+            "md:h-44",
             "relative",
             "rounded-xl",
-            "overflow-hidden"
+            "overflow-hidden",
+            "flex"
           );
 
           const img = document.createElement("img");
@@ -71,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
             "rounded-xl",
             "absolute",
             "inset-x-0",
-            "bottom-0"
+            "bottom-0",
+            "basis-3/4"
           );
 
           // Category title row
@@ -111,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Current data
           const timeH1 = document.createElement("h1");
-          timeH1.classList.add("text-2xl", "text-white");
-          timeH1.innerHTML = `<span id="${post.title}-data">${current}</span>hour`;
+          timeH1.classList.add("text-2xl", "md:text-4xl", "text-white");
+          timeH1.innerHTML = `<span id="${post.title}-data">${current}</span>hrs`;
 
           //Previous Data
           const timeP = document.createElement("p");
